@@ -1,0 +1,97 @@
+.categories-container {
+  padding: 40px;
+  background: #f9f9ff; /* light colorful background */
+}
+
+.categories-title {
+  font-size: 36px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  color: #0b7570; /* vibrant pink */
+
+  text-shadow: 
+    2px 2px 4px rgba(255, 75, 145, 0.3), 
+    0 0 10px rgba(255, 99, 200, 0.5); /* colorful glow */
+
+  margin-top: 20px;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+  animation: titlePulse 2s ease-in-out infinite;
+}
+
+@keyframes titlePulse {
+  0% {
+    text-shadow: 2px 2px 4px rgba(255, 75, 145, 0.3), 0 0 5px rgba(255, 0, 128, 0.4);
+  }
+  50% {
+    text-shadow: 2px 2px 6px rgba(0, 200, 255, 0.3), 0 0 15px rgba(0, 255, 200, 0.6);
+  }
+  100% {
+    text-shadow: 2px 2px 4px rgba(255, 75, 145, 0.3), 0 0 5px rgba(255, 0, 128, 0.4);
+  }
+}
+
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 25px;
+  justify-items: center;
+}
+
+.category-card {
+  width: 100%;
+  max-width: 160px;
+  padding: 16px;
+  border-radius: 12px;
+  text-align: center;
+  background: linear-gradient(105deg, #0b7570, #0b7570); /* soft gradient */
+  box-shadow: 0 5px 15px rgba(2, 58, 68, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.category-card:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 12px 25px rgba(12, 119, 151, 0.4),
+              0 0 20px rgba(12, 119, 151, 0.4); /* neon hover glow */
+}
+
+.category-img-wrapper {
+  width: 100%;
+  height: 100px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.category-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.category-card:hover .category-image {
+  transform: scale(1.1);
+}
+
+.category-name {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff; /* vibrant text */
+  text-shadow: 0 0 5px rgba(1, 44, 41, 0.336);
+  text-decoration: none; /* removes underline */
+}
+
+/* Also make sure links inside category-name have no underline */
+.category-name a {
+  text-decoration: none;
+  color: inherit; /* keeps white color */
+}
+

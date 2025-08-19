@@ -1,0 +1,83 @@
+/* Container */
+.delivered-orders {
+  padding: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Heading */
+.delivered-orders h2 {
+  text-align: center;
+  color: #05685b;
+  margin-bottom: 20px;
+  font-size: 28px;
+  width: 97%;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Empty message */
+.delivered-orders .empty {
+  text-align: center;
+  color: #888;
+  font-size: 16px;
+}
+
+/* Table */
+.delivered-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}
+
+/* Table Header */
+.delivered-table thead {
+  background: linear-gradient(90deg, #05685b, #039e8f);
+  color: white;
+}
+
+.delivered-table th {
+  padding: 12px;
+  font-size: 14px;
+  text-align: center;
+  border-right: 1px solid rgba(255,255,255,0.2);
+}
+
+.delivered-table th:last-child {
+  border-right: none;
+}
+
+/* Table Rows */
+.delivered-table td {
+  padding: 12px;
+  font-size: 14px;
+  color: #333;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+}
+
+/* Alternate row colors */
+.delivered-table tbody tr:nth-child(even) {
+  background: #f9f9ff;
+}
+
+/* Row hover */
+.delivered-table tbody tr:hover {
+  background: #e6f7f4;
+  transition: 0.3s;
+}
+
+/* Product Images */
+.delivered-table img {
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.delivered-table img:hover {
+  transform: scale(1.1);
+}

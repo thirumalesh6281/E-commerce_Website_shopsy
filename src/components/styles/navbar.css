@@ -1,0 +1,149 @@
+/* === Sticky Navbar === */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 96%;
+  margin-left: 27px;
+  margin-top: 10px;
+  height: 70px;
+  z-index: 1000;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px; /* Increased right-left padding */
+  background: linear-gradient(90deg, #008080, #86fde8);
+  color: white;
+  font-family: 'Arial', sans-serif;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box; /* Important */
+}
+
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-image {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+/* Logo floating animation */
+.logo-text {
+  font-size: 28px;
+  font-weight: bold;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.3);
+  animation: floatLogo 3s ease-in-out infinite;
+}
+
+@keyframes floatLogo {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.navbar-center {
+  flex: 1;
+  text-align: center;
+}
+
+.search-input {
+  width: 60%;
+  max-width: 450px;
+  padding: 10px 18px;
+  border-radius: 30px;
+  border: 2px solid #fff;
+  outline: none;
+  font-size: 16px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  transition: all 0.4s ease;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+.search-input:hover {
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+  border-color: #ff9900;
+}
+
+.search-input:focus {
+  border-color: #ff6600;
+  box-shadow: 0 0 20px rgba(255, 165, 0, 0.7);
+}
+
+/* ✨ Animated placeholder text */
+.animated-placeholder::placeholder {
+  animation: slideText 1s ease-in-out;
+  color: #888;
+  font-style: italic;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+}
+
+@keyframes slideText {
+  0% {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  50% {
+    opacity: 0.6;
+    transform: translateX(5px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.navbar-right {
+  display: flex;
+  gap: 12px;
+  flex-shrink: 0; /* Prevent shrinking */
+}
+
+.nav-btn {
+  background-color: white;
+  color: #333;
+  padding: 8px 15px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s ease;
+  white-space: nowrap; /* Prevent text from wrapping */
+}
+
+.nav-btn:hover {
+  background-color: #f1f1f1;
+}
+
+/* === Body Padding to Prevent Content Behind Navbar === */
+body {
+  padding-top: 80px;
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100px;
+  height: 70px;
+  text-decoration: none;
+  color: inherit;
+}
