@@ -59,7 +59,7 @@ const NavBar = () => {
         <Link to="/profile">
           <button className="nav-btn">👤 Profile</button>
         </Link>
-        <button className="nav-btn" onClick={handleLogout}>🚪 Logout</button>
+        <button className="nav-btn" onClick={handleLogout}>🚪 login</button>
       </div>
     </nav>
   );
