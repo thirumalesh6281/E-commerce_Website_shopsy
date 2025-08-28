@@ -68,3 +68,30 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+# ShopNow E-Commerce Website_Backend_files
+
+This is a full-stack e-commerce website project built using **React (Frontend)**, **PHP (Backend)**, and **MySQL (Database)**.  
+It includes features such as user authentication, product management, cart system, order placement, and an admin panel.  
+
+---
+## 🛠 Tech Stack
+- **Frontend:** React.js, Tailwind CSS  
+- **Backend:** PHP  
+- **Database:** MySQL (phpMyAdmin)  
+
+---
+
+## 📂 Database Tables
+- `users` → stores user details  
+- `orders` → stores order information  
+- `order_items` → stores products in each order  
+- `products` → stores product details  
+- `cart` → stores user’s cart items
+- `admin` → Store admin Details
+- `Delivered` → Stores Delivered item 
+---
+
+✅ This README will make your repo look professional and easy to understand.  
+
+Do you want me to **write a ready-to-use README.md file** for your repo with all details (backend files + tables + setup steps), so you can just copy-paste it?
